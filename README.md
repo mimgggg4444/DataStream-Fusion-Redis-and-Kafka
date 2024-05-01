@@ -28,3 +28,16 @@ nosql - 스키마가 없거나 유연한 스키마
 - Redis Insight - https://redis.io/insight/
 - Hedisql - https://www.heidisql.com/download.php
 
+
+```
+CREATE TABLE `user` (
+	`id` BIGINT(19) NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(50) NOT NULL DEFAULT '' COLLATE 'utf8mb4_0900_ai_ci',
+	`password` VARCHAR(50) NOT NULL DEFAULT '' COLLATE 'utf8mb4_0900_ai_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_0900_ai_ci'
+ENGINE=InnoDB
+;
+
+```
