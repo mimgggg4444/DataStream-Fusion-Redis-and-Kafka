@@ -24,4 +24,7 @@ nosql - 스키마가 없거나 유연한 스키마
 인메모리 - 빠름 / 실시간 / redis / volatility(휘발성)
 
 
+- Redis - https://github.com/microsoftarchive/redis/releases
+- Redis Insight - https://redis.io/insight/
+- Hedisql - https://www.heidisql.com/download.php
 
