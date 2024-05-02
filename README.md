@@ -26,8 +26,8 @@ nosql - 스키마가 없거나 유연한 스키마
 
 - Redis - https://github.com/microsoftarchive/redis/releases
 - Redis Insight - https://redis.io/insight/
-- Hedisql - https://www.heidisql.com/download.php
-
+- Hedisql - https://www.heidisql.com/download.php (윈도우 전용)
+- mysql - https://velog.io/@heiswicked/M1%EC%97%90%EC%84%9C-MySQL-%EC%84%A4%EC%B9%98brew%EB%A1%9C
 
 ```
 CREATE TABLE `user` (
@@ -41,3 +41,19 @@ ENGINE=InnoDB
 ;
 
 ```
+
+
+
+### join에 관한 설명
+
+
+### redis
+
+쉽고 편한 redis
+
+
+---
+---
+
+
+
