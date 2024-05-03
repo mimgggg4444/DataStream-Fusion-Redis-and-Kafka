@@ -1,5 +1,15 @@
 # test-using-database
 
+---
+---
+
+### redis docker env
+
+```
+docker run --name couchcoding-redis -d -p 6379:6379 redis
+
+```
+
 
 mysql
 
