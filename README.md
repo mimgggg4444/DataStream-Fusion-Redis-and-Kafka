@@ -1,4 +1,25 @@
-# test-using-database
+# 
+
+1. 이커머스 비즈니스
+2. redis활용 서비스 설계
+3. redis기본개념
+4. redis설치 및 configuration
+5. redis활용 서비스 개발
+6. redis서비스 test / test, stress test
+7. redis 장애상황 대응
+8. 추가활용사례
+9. kafka활용
+10. kafka개념
+11. " 설치 설정
+12. " 서비스 개발
+13. " 서비스 test
+14. " 장애상황 대응
+15. 추가활용사례
+
+
+---
+---
+
 
 ---
 ---
