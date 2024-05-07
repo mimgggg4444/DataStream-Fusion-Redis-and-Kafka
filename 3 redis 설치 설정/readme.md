@@ -76,11 +76,81 @@
 
 ### ServerSentinel 설치
 
+apt-get install redis-sentinel
+
+ps -ef | grep sentinel
+
+- 두번째 redis
+
+apt-get install redis-sentinel
+
+
+ps -ef | grep sentinel
+
+ip address
+
+match
+
+vi sentinel.confg
+
+-> bind에서 ip address 수정 뒤에 127 지우지 말기
+
+service redis-sentinel restart
+
+---
+
+인스턴스 시작
+
+my_price_service
+
+인스턴스 유형 t2
+
+키 페어 만들어 놓은거 사용
+
+보안그룹 launch 5 <- 만들어 놓은거 사용.
+
+만들어 놓은것도 ip 주소 변경
+
+sentinel ip address로
+
+aps -ef | grep sentinel
+
+172.31.10.32 ... 등등
 
 
 
+3개가 있음. 
+sentinel, first, secound
+
+이렇게 일단 올 stop 설정
 
 
+sentinel monitor mymaster 에 ip주소 통합하기
+
+
+26379 port열기
+
+-> 아까처럼 아무 인스턴스 들어가서 보안 설정
+
+포트 범위 26379 설정 후,
+
+보안 위자드 5 설정
+
+vi /etc/redis/sentinel.conf
+
+service sentinel start
+
+log 간단하게 출력
+
+tail -f /var/log/redis/redis-sentinel.log
+
+failover - 
+
+redis-cli info | frep role을 통해 master인지 확인
+
+
+### service redis stop
+### service redis start
 
 
 
