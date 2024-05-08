@@ -120,6 +120,75 @@ jpa buddy를 사용해서 네이티브 쿼리 사용 가능.
 jpa자체에서 join사용방법
 
 
+before
+
+user마다 데이터에 엑세스 할 수 있는 범위 지정
+
+인크립트, 디크립트 코드?
+
+user -> 집주소, 전화번호의 암호화 -> 
+
+
+spring boot 암호화 3대장
+
+sha ras aes
+
+user에서 암호화 할때 signup에서 사용됨. userservice에서 (추천인 코드) -> 
+
+userservice에서 암호화 하는 방법 -> sha res ass 사용하는 방법.
+
+spring yaml env에서 환경변수 작성하는 방법
+
+.env에 password
+
+git actions secrets and variables -> 자동화 할때 이거 사용( .env ) 대체
+
+log 관련 처리 방법
+
+로그 인터셉터 - 스피그 인터셉트 / log 패턴 인터셉트 / 숫자에 따른 처리 로직
+- 숫자 코드에 따른 처리 로직?
+
+internet exception log 처리.
+
+server error exception
+
+
+error코드를 정리해서 
+
+하지만 error에 작성할 수 없는 경우. 특수한 경우
+
+회원가입을 할 수 없습니다.
+
+
+repository.java파일의 설명
+
+servicve 규정 범위가 모호하기 때문에 service repository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
