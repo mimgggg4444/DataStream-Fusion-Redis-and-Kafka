@@ -1,1 +1,49 @@
 mobile test
+
+VMware 서버가상화
+# VMware ESXi 호스트에 SSH로 접속
+ssh root@<esxi_host_ip>
+
+# 가상 머신 목록 확인
+vim-cmd vmsvc/getallvms
+
+# 새로운 가상 머신 생성
+vim-cmd vmsvc/createdummyvm <vm_name> <datastore_name>
+
+# 가상 머신 전원 관리
+vim-cmd vmsvc/power.on <vm_id>
+vim-cmd vmsvc/power.off <vm_id>
+
+
+
+freeNAS NAS서버구축
+# FreeNAS 웹 인터페이스에 로그인 후 SSH 접속 
+ssh root@<freenas_ip>
+
+# 저장소 풀 생성
+zpool create -f <pool_name> <disk1> <disk2> ...
+
+# 저장소 풀 상태 확인  
+zpool status
+
+# SMB 공유 폴더 생성
+mkdir -p /mnt/<dataset_name>/<folder_name>
+chown -R root:wheel /mnt/<dataset_name>/<folder_name> 
+chmod -R 777 /mnt/<dataset_name>/<folder_name>
+
+
+
+네트워크 구성 cisco
+# VLAN 생성
+Switch(config)# vlan <vlan_id>
+Switch(config-vlan)# name <vlan_name>
+
+# 인터페이스에 VLAN 할당 
+Switch(config)# interface <interface_id>
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan <vlan_id>
+
+# 트렁크 포트 설정
+Switch(config)# interface <interface_id> 
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan <vlan_list>
